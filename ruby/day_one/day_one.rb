@@ -3,7 +3,7 @@ def for_in
     yield i 
   end
 end
-
+ 
 puts 'Hello, world.'
 
 puts "Index of 'Ruby' in 'Hello, Ruby': #{'Hello, Ruby.'.index('Ruby')}."
