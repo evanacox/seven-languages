@@ -73,14 +73,13 @@ def print_tree
     } 
   })
 
-  # printf '  '
-  # tree.visit_all { |child| printf "#{child.node_name}, " }
+  # initial prefix is '  ', so it looks nicer
   tree.print_all '  '
 end
 
 def grep_file(filename, pattern)
   puts "\nGrepping '#{filename}' for '#{pattern.inspect}': "
-  DayTwoStudy.grep_file 'romeo_and_juliet.txt', /thine/
+  DayTwoStudy.grep_file filename, pattern
 end
 
 print_contents
